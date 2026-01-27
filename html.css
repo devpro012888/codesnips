@@ -1,63 +1,116 @@
 .indent-20px {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .indent-40px {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 span {
-    color: blue;
+  color: blue;
 }
 
 body {
-    margin: 0 auto;
-    width: 80%;
+  margin: 0 auto;
+  width: 95%;
 }
 
 /* Structure of Pages Section (Code View) */
-.structure-pages-code { 
-border: 1px solid black;
-width: 35%;
-padding: 1%;
-flex-grow: 1;
+.structure-pages-code {
+  border: 1px solid black;
+  width: 80%;
+  padding: 1%;
+  flex-grow: 1;
 }
 
 /* Structure of Pages Section (Result View) */
 .structure-pages-result {
-    border: 1px solid black;
-    width: 35%;
-    padding: 1%;
-    flex-grow: 2;
+  border: 1px solid black;
+  width: 80%;
+  padding: 1%;
+  flex-grow: 2;
+}
+
+/* Styles the Description Section */
+.structure-description {
+  width: 40%;
+  margin-right: 2%;
+  text-align: justify;
 }
 
 /* Styles the Structure Section */
 .structure {
-    display: flex;
-    float: right;
-    width: 75%;
-    gap: 2%;
+  display: flex;
+  width: 80%;
+  gap: 2%;
 }
 
 /* Center's the Page Header */
 .page-header {
-    text-align: center;
+  text-align: center;
+}
+
+.code-header-html {
+  text-align: left;
+  background-color: blue;
+  width: fit-content;
+  color: white;
+  padding: 5px;
+}
+
+.code-header-result {
+  text-align: left;
+  background-color: lightgrey;
+  width: fit-content;
+  color: white;
+  padding: 5px;
 }
 
 /* Styles the Navigation Bar */
-ul, li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 15px;
+ul,
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 li {
-    border: 1px solid black;
-    padding: 5px;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+/*------------------------------*/
+
+/*Centers the Title for Body, Head and Title Elements*/
+
+.body-head-title {
+  display: flex;
+  gap: 2%;
+}
+.body-head-title-header {
+  text-align: center;
 }
 
+.body-description {
+  width: 40%;
+  margin-right: 2%;
+  text-align: justify;
+}
+
+.body-head-title-code {
+  border: 1px solid black;
+  width: 80%;
+  padding: 1%;
+  flex-grow: 1;
+}
+
+.body-head-title-result {
+  border: 1px solid black;
+  width: 80%;
+  padding: 1%;
+  flex-grow: 2;
+}
