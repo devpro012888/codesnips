@@ -133,9 +133,40 @@ nav li a {
   background-color: darkgray;
 }
 
-.text-info {
+/*Styles the Description Section in Text Section*/
+.text-description {
+  display: flex;
+  gap: 2%;
+}
+
+.text-info1 {
   width: fit-content;
   font-size: 20px;
   text-align: center;
   line-height: 1.3;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.text-info2 {
+  font-size: 18px;
+}
+/*------------------------------*/
+
+/*Styles for the Heading Section*/
+
+.headings {
+  text-align: center;
+}
+
+.heading-description {
+  width: 40%;
+  margin-right: 2%;
+  text-align: justify;
+}
+
+.headings-code {
+  border: 1px solid black;
+  width: 40%;
+  padding: 1%;
 }
