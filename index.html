@@ -7,20 +7,58 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <input
-      class="search-bar"
-      type="search"
-      placeholder="Search tags, elements, properties..."
-    />
-    <h1>CodeSnips.com</h1>
-    <!--Site Header-->
-    <nav>
-      <!--Site Logo and Navigation Links-->
-      <ul>
-        <li><a href="">HTML</a></li>
-        <li><a href="">CSS</a></li>
-        <li><a href="">JavaScript</a></li>
-      </ul>
-    </nav>
+    <header class="page-header">
+      <h1>CodeSnips.com</h1>
+    </header>
+    <div class="layout">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Coding Languages</h2>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h2 class="main-content-header">Learn how to Code Today!</h2>
+        <div class="search-container">
+          <label for="site-search" class="visually-hidden">Search site</label>
+          <input
+            id="site-search"
+            class="search-bar"
+            type="search"
+            placeholder="Search tags, elements, properties..."
+            aria-label="Search site"
+          />
+        </div>
+      </main>
+
+      <!-- Right Utility Sidebar -->
+      <aside class="right-sidebar">
+        <div class="sidebar-header">
+          <h2>Quick Tools</h2>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/" target="_blank"
+                >W3 Schools</a
+              >
+            </li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#common-errors">Common Errors</a></li>
+            <li><a href="#references">References</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
   </body>
 </html>
