@@ -18,7 +18,7 @@
         </div>
         <nav class="sidebar-nav">
           <ul>
-            <li><a href="">HTML</a></li>
+            <li><a href="/HTML/html-page.html">HTML</a></li>
             <li><a href="">CSS</a></li>
             <li><a href="">JavaScript</a></li>
           </ul>
@@ -27,8 +27,32 @@
 
       <!-- Main Content -->
       <main class="main-content">
-        <h2 class="main-content-header">Learn how to Code Today!</h2>
-        <div class="search-container">
+        <section class="hero">
+          <h2 class="hero-title">Learn to Code Today!</h2>
+          <p class="hero-subtitle">
+            Welcome to <strong>CodeSnips</strong> — your quick-reference hub for
+            web development. Find ready-to-use code snippets, examples, and
+            cheat sheets for HTML, CSS, and JavaScript.
+          </p>
+          <div class="hero-features">
+            <div class="feature-card">
+              <h3>📚 Cheat Sheets</h3>
+              <p>
+                Quick reference guides for common coding patterns and syntax
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>💡 Code Examples</h3>
+              <p>Practical examples you can copy, paste, and learn from</p>
+            </div>
+            <div class="feature-card">
+              <h3>🔍 Easy Search</h3>
+              <p>Find exactly what you need in seconds</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="search-container">
           <label for="site-search" class="visually-hidden">Search site</label>
           <input
             id="site-search"
@@ -37,7 +61,8 @@
             placeholder="Search tags, elements, properties..."
             aria-label="Search site"
           />
-        </div>
+          <button class="search-button" type="submit">CodeSnip Search</button>
+        </section>
       </main>
 
       <!-- Right Utility Sidebar -->
