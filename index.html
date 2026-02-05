@@ -1,17 +1,57 @@
 <!doctype html>
+<!--
+  ========================================
+  CodeSnips - Main HTML Document
+  ========================================
+  A quick-reference hub for web development code snippets.
+  Contains navigation sidebars, hero section, and search functionality.
+-->
+
 <html lang="en">
+  <!-- ========================================
+       HEAD SECTION
+       Contains metadata, title, and external resource links
+       ======================================== -->
   <head>
+    <!-- Character encoding for proper text display -->
     <meta charset="UTF-8" />
+
+    <!-- Responsive viewport settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title shown in browser tab -->
     <title>CodeSnips</title>
+
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
+  <!-- ========================================
+       BODY SECTION
+       Contains all visible page content
+       ======================================== -->
   <body>
+    <!-- ========================================
+         PAGE HEADER
+         Main site title/brand header
+         ======================================== -->
     <header class="page-header">
       <h1>CodeSnips.com</h1>
     </header>
+
+    <!-- ========================================
+         LAYOUT CONTAINER
+         Flexbox wrapper for the three-column layout:
+         - Left sidebar (navigation)
+         - Main content area
+         - Right sidebar (quick tools)
+         ======================================== -->
     <div class="layout">
-      <!-- Left Sidebar -->
+      <!-- ========================================
+           LEFT SIDEBAR - CODING LANGUAGES
+           Navigation links to different programming languages
+           Sticky positioned for constant visibility
+           ======================================== -->
       <aside class="sidebar">
         <div class="sidebar-header">
           <h2>Coding Languages</h2>
@@ -25,8 +65,15 @@
         </nav>
       </aside>
 
-      <!-- Main Content -->
+      <!-- ========================================
+           MAIN CONTENT AREA
+           Central section containing hero and search
+           ======================================== -->
       <main class="main-content">
+        <!-- ========================================
+             HERO SECTION
+             Welcome message and feature highlights
+             ======================================== -->
         <section class="hero">
           <h2 class="hero-title">Learn to Code Today!</h2>
           <p class="hero-subtitle">
@@ -34,6 +81,8 @@
             web development. Find ready-to-use code snippets, examples, and
             cheat sheets for HTML, CSS, and JavaScript.
           </p>
+
+          <!-- Feature cards highlighting main site benefits -->
           <div class="hero-features">
             <div class="feature-card">
               <h3>📚 Cheat Sheets</h3>
@@ -52,8 +101,15 @@
           </div>
         </section>
 
+        <!-- ========================================
+             SEARCH CONTAINER
+             Site-wide search functionality
+             ======================================== -->
         <section class="search-container">
+          <!-- Visually hidden label for screen readers -->
           <label for="site-search" class="visually-hidden">Search site</label>
+
+          <!-- Search input field with accessibility attributes -->
           <input
             id="site-search"
             class="search-bar"
@@ -61,11 +117,17 @@
             placeholder="Search tags, elements, properties..."
             aria-label="Search site"
           />
+
+          <!-- Search button -->
           <button class="search-button" type="submit">CodeSnip Search</button>
         </section>
       </main>
 
-      <!-- Right Utility Sidebar -->
+      <!-- ========================================
+           RIGHT SIDEBAR - QUICK TOOLS
+           External resources and supplementary links
+           Sticky positioned for constant visibility
+           ======================================== -->
       <aside class="right-sidebar">
         <div class="sidebar-header">
           <h2>Quick Tools</h2>
@@ -85,5 +147,6 @@
         </nav>
       </aside>
     </div>
+    <!-- End of layout container -->
   </body>
 </html>
